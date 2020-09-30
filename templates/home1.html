@@ -1,0 +1,21 @@
+{% extends "base1.html" %}
+{% block content %}
+
+
+<form action="add" class='p-4 col-md-4 container' method="post" >{% csrf_token %}
+  
+    
+      <label >Enter No. 1</label>
+      <input class="form-control" name="no1" placeholder="No. 1">
+    
+  
+  
+    <label >Enter No. 2</label>
+    <input  class="form-control" name="no2" placeholder="No. 2">
+  
+  
+
+   <input type="submit" class="btn btn-primary mx-2 my-3" value="Submit">
+</form>
+
+{% endblock %}
